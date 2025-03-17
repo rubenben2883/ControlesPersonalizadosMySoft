@@ -14,6 +14,12 @@ namespace ControlesPersonalizadosMySoft
             this.TextAlign = HorizontalAlignment.Right;
         }
 
+        /// <summary>
+        /// Hacemos que el control Texbox Solo acepte Numeros y el punto decimal
+        /// Util para no tener que estar programando tetboxes alineados a la derecha 
+        /// y que ademas solo permitan numero
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnKeyPress(KeyPressEventArgs e)
         {
             base.OnKeyPress(e);
